@@ -14,6 +14,26 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <body>
+            <div class="d-flex justify-content-center loader-wrapper">
+                <div class="loader">
+                    <svg viewBox="0 0 80 80">
+                        <circle id="test" cx="40" cy="40" r="32"></circle>
+                    </svg>
+                </div>
+            
+                <div class="loader triangle">
+                    <svg viewBox="0 0 86 80">
+                        <polygon points="43 8 79 72 7 72"></polygon>
+                    </svg>
+                </div>
+            
+                <div class="loader">
+                    <svg viewBox="0 0 80 80">
+                        <rect x="8" y="8" width="64" height="64"></rect>
+                    </svg>
+                </div>
+            </div>
+            
             <!--Navagation Bar-->
             <header data-aos="fade-right">
                 <!--Logo-->
@@ -41,6 +61,7 @@
                 </ul>
             </header>
             <!--Home Section-->
+            <div class="main-content">
             <section data-aos="fade-down" class="home" id="home">
                 <div class="social">
                     <a href="">
@@ -164,6 +185,7 @@
                 </form>
             </div>
         </section>
+    </div>
         <!-- Footer -->
         <div class="footer">
             <h2>Melem</h2>

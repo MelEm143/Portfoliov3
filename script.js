@@ -26,3 +26,12 @@ darkmode.onclick = () => {
     document.body.classList.remove("active");
   }
 };
+$(window).on("load", function() {
+  setTimeout(function() {
+    $(".loader-wrapper").fadeOut("slow", function() {
+      $(this).remove(); // remove the loader from the DOM
+      $(".main-content").fadeIn("slow"); // show the main content
+      $("body").css("overflow", "auto"); // show the scroll bar
+    });
+  }, 1000); // hide the loader after 1 second
+});
